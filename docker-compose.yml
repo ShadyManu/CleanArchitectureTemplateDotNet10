@@ -1,0 +1,35 @@
+version: "3.4"
+
+services:
+  web:
+    image: ${DOCKER_REGISTRY-}web
+    container_name: web
+    build:
+      context: .
+      dockerfile: src/Web/Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    depends_on:
+      - db
+    networks:
+      - cctemplate
+
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "ChangeMe123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - db-data:/var/opt/mssql
+    networks:
+      - cctemplate
+
+volumes:
+  db-data:
+
+networks:
+  cctemplate:
+    driver: bridge
