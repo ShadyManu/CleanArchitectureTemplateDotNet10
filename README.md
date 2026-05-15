@@ -97,5 +97,4 @@ See **LICENSE** for details.
 ---
 
 **Author:** [Manuel Raso](https://github.com/ShadyManu)  
-**LinkedIn:** [linkedin.com/in/manuel-raso](https://www.linkedin.com/in/manuel-raso)  
-**Repository:** [CleanArchitectureTemplateDotNet8](https://github.com/ShadyManu/CleanArchitectureTemplateDotNet8)
+**LinkedIn:** [linkedin.com/in/manuel-raso](https://www.linkedin.com/in/manuel-raso)
