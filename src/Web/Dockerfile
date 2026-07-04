@@ -14,6 +14,7 @@ COPY ["Directory.Build.props", "."]
 COPY ["src/Web/Web.csproj", "src/Web/"]
 COPY ["src/Application/Application.csproj", "src/Application/"]
 COPY ["src/Domain/Domain.csproj", "src/Domain/"]
+COPY ["src/Presentation/Presentation.csproj", "src/Presentation/"]
 COPY ["src/Infrastructure/Infrastructure.csproj", "src/Infrastructure/"]
 RUN dotnet restore "./src/Web/./Web.csproj"
 COPY . .
